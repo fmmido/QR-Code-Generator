@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body class="bg-gray-100 p-4">
+    <div class="bg-white rounded-lg shadow-lg p-4 max-w-md w-full">
+        <h1 class="text-2xl font-bold text-center mb-3 text-gray-800">QR Code Generator</h1>
+        <p class="text-center text-gray-600 mb-3">Generate QR codes from text (paste with Ctrl+V or right-click)</p>
+
+        <!-- Input type selection -->
+        <label for="inputType" class="block text-sm font-semibold mb-1">Select Input Type:</label>
+        <select id="inputType" class="w-full p-2 border rounded-md mb-3 focus:ring-2 focus:ring-purple-500">
+            <option value="url">URL</option>
+            <option value="text">Text</option>
+            <option value="email">Email</option>
+            <option value="phone">Phone Number</option>
+            <option value="sms">SMS Message</option>
+            <option value="wifi">WiFi Credentials</option>
+            <option value="geo">Geolocation (Latitude, Longitude)</option>
+            <option value="event">Event (Calendar)</option>
+            <option value="crypto">Cryptocurrency Address</option>
+            <option value="contact">Contact Info (vCard)</option>
+        </select>
+
+        <!-- Input Field -->
+        <div class="input-wrapper">
+            <input id="qrInput" type="text" placeholder="Enter or paste data (Ctrl+V)..." class="w-full p-2">
+        </div>
+
+        <!-- Generate QR Code Button -->
+        <button id="generateQR" class="bg-purple-500 text-white py-2 px-4 rounded-md hover:bg-purple-600 w-full mt-3 button-glow">
+            Generate QR Code
+        </button>
+
+        <!-- QR Code Preview Container -->
+        <div id="qrContainer" class="preview-container hidden">
+            <div id="qrCode" class="flex justify-center items-center pt-4">
+                <!-- QR code image will be appended here -->
+            </div>
+            <p class="text-center text-gray-600 mt-2">Right-click the QR code and select "Save Image As..." to save.</p>
+        </div>
+        
+    </div>
+
+    <script src="qrcode.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
