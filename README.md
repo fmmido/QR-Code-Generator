@@ -22,5 +22,5 @@ The extension should load and function as expected.
 - Source code for `qrcode.min.js` can be found [here](https://github.com/davidshimjs/qrcodejs).
 
 ## Online QR Code Generator 
-Check out Online QR Code Generator on website: [Your Website Name](https://gifmakes.com)
+Check out Online QR Code Generator on website: [Animated Gif Makes online](https://gifmakes.com)
 
