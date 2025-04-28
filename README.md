@@ -2,7 +2,6 @@
 
 ## Requirements
 - OS: Windows, Linux, or macOS
-- Node.js (Optional, not required for this extension)
 
 ## Build Instructions
 This extension does not require any build process.
