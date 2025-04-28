@@ -20,3 +20,7 @@ The extension should load and function as expected.
 ## Notes
 - `qrcode.min.js` is used as-is and is an open-source, unmodified library.
 - Source code for `qrcode.min.js` can be found [here](https://github.com/davidshimjs/qrcodejs).
+
+## Online QR Code Generator 
+Check out Online QR Code Generator on website: [Your Website Name](https://gifmakes.com)
+
